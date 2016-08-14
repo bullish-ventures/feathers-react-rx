@@ -1,5 +1,5 @@
 import assert from 'assert';
-import RxJS from 'RxJS';
+import RxJS from 'rxjs';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import component from '../src/component';
