@@ -1,0 +1,59 @@
+{
+  "name": "feathers-react-rx",
+  "description": "Utility components and plugins for using Feathers with RxJS and React",
+  "version": "0.0.0",
+  "homepage": "https://github.com/bullish-ventures/feathers-react-rx",
+  "main": "lib/",
+  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bullish-ventures/feathers-react-rx.git"
+  },
+  "author": {
+    "name": "David Luecke",
+    "email": "daff@neyeon.com",
+    "url": "https://feathersjs.com"
+  },
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/bullish-ventures/feathers-react-rx/issues"
+  },
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "scripts": {
+    "prepublish": "npm run compile",
+    "publish": "git push origin && git push origin --tags && npm run changelog",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
+    "changelog": "github_changelog_generator && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
+    "compile": "rimraf lib/ && babel -d lib/ src/",
+    "watch": "babel --watch -d lib/ src/",
+    "jshint": "jshint src/. test/index.test.js test/state.test.js --config",
+    "mocha": "mocha --recursive test/ --compilers js:babel-core/register",
+    "test": "npm run compile && npm run jshint && npm run mocha",
+    "start": "npm run compile && node example/app"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "react-dom": "^15.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-preset-es2015": "^6.13.2",
+    "feathers": "^2.0.1",
+    "jshint": "^2.9.2",
+    "mocha": "^3.0.2",
+    "react": "^15.3.0",
+    "rimraf": "^2.5.4",
+    "rxjs": "^5.0.0-beta.11"
+  }
+}
