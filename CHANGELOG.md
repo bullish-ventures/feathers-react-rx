@@ -1,5 +1,8 @@
 # Change Log
 
+## [v0.1.1](https://github.com/bullish-ventures/feathers-react-rx/tree/v0.1.1) (2016-08-14)
+[Full Changelog](https://github.com/bullish-ventures/feathers-react-rx/compare/v0.1.0...v0.1.1)
+
 ## [v0.1.0](https://github.com/bullish-ventures/feathers-react-rx/tree/v0.1.0) (2016-08-14)
 
 
