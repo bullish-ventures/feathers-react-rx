@@ -6,7 +6,11 @@
 
 ## About
 
-A collection of utilities and a base React component to make working with Feathers and RxJS easier. Plays nicely with [feathers-reactive](https://github.com/feathersjs/feathers-reactive). It currently contains:
+A collection of utilities and a base React component to make working with Feathers and RxJS easier. Plays nicely with [feathers-reactive](https://github.com/feathersjs/feathers-reactive).
+
+> npm install feathers-react-rx
+
+It currently contains:
 
 ### app.state
 
