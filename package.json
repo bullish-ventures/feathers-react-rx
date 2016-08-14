@@ -1,10 +1,14 @@
 {
   "name": "feathers-react-rx",
   "description": "Utility components and plugins for using Feathers with RxJS and React",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "homepage": "https://github.com/bullish-ventures/feathers-react-rx",
   "main": "lib/",
-  "keywords": ["feathers", "rxjs", "react"],
+  "keywords": [
+    "feathers",
+    "rxjs",
+    "react"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
